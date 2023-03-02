@@ -87,12 +87,12 @@ public class UserDaoJDBCImpl implements UserDao {
                 listOfUsers.add(user);
             }
             System.out.println(listOfUsers);
-            connection.close();
-            return listOfUsers;
+
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+        return listOfUsers;
     }
 
     @Override
